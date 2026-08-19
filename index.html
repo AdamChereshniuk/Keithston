@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
     <title>Keithston</title>
 </head>
 <body>
@@ -15,22 +16,22 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="/Keithston/">
                         <img class="header__logo-img" src="./img/Header/logo.svg" alt="Лого">
                     </a>
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__item-link active" href="#">Home</a>
+                                <a class="header__item-link active" href="/Keithston/">Home</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">Blog</a>
+                                <a class="header__item-link" href="/Keithston/">Blog</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">Contact Us</a>
+                                <a class="header__item-link" href="/Keithston/">Contact Us</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">Services</a>
+                                <a class="header__item-link" href="/Keithston/">Services</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,13 +47,13 @@
                     Perfect Eats
                 </h1>
                 <div class="hero__btns">
-                    <button class="hero__shop-btn">Shop Now</button>
-                    <button class="hero__learn-btn">Learn More</button>
+                    <a class="hero__shop-btn" href="#top">Shop Now</a>
+                    <a class="hero__learn-btn" href="#about">Learn More</a>
                 </div>
             </div>
         </section>
     </div>
-    <section class="top-section">
+    <section class="top-section" id="top">
         <div class="container">
             <div class="top__inner">
                 <h2 class="top__title">Top Products</h2>
@@ -202,7 +203,7 @@
             </div>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about__inner">
                 <h2 class="about__title">About us</h2>
@@ -253,16 +254,24 @@
                         <span class="footer-top__follow-text">Follow us</span>
                         <ul class="footer-top__socials">
                             <li class="footer-top__social">
-                                <img class="footer-top__social-img" src="./img/Footer/facebook.svg" alt="Facebook">
+                                <a href="/Keithston/">
+                                    <img class="footer-top__social-img" src="./img/Footer/facebook.svg" alt="Facebook">
+                                </a>
                             </li>
                             <li class="footer-top__social">
-                                <img class="footer-top__social-img" src="./img/Footer/pinterest.svg" alt="Pinterest">
+                                <a href="/Keithston/">
+                                    <img class="footer-top__social-img" src="./img/Footer/pinterest.svg" alt="Pinterest">
+                                </a>
                             </li>
                             <li class="footer-top__social">
-                                <img class="footer-top__social-img" src="./img/Footer/whatsapp.svg" alt="Whatsapp">
+                                <a href="/Keithston/">
+                                    <img class="footer-top__social-img" src="./img/Footer/whatsapp.svg" alt="Whatsapp">
+                                </a>
                             </li>
                             <li class="footer-top__social">
-                                <img class="footer-top__social-img" src="./img/Footer/instagram.svg" alt="Instagram">
+                                <a href="/Keithston/">
+                                    <img class="footer-top__social-img" src="./img/Footer/instagram.svg" alt="Instagram">
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -279,16 +288,16 @@
                         <ul class="footer-main__list">
                             <li class="footer-main__item">Explore</li>
                             <li class="footer-main__item">
-                                <a href="#">Home</a>
+                                <a href="/Keithston/">Home</a>
                             </li>
                             <li class="footer-main__item">
-                                <a href="#">Blog</a>
+                                <a href="/Keithston/">Blog</a>
                             </li>
                             <li class="footer-main__item">
-                                <a href="#">Contact us</a>
+                                <a href="/Keithston/">Contact us</a>
                             </li>
                             <li class="footer-main__item">
-                                <a href="#">Services</a>
+                                <a href="/Keithston/">Services</a>
                             </li>
                         </ul>
                     </div>
@@ -297,18 +306,22 @@
 
                         <ul class="footer-main__right-list">
                             <li class="footer-main__right-item">
-                                <img src="./img/Footer/news-1.jpg" alt="Puff pastry bliss.">
-                                <div>
-                                    <time datetime="14.06.2024">June 14, 2024</time>
-                                    <span>Puff pastry bliss.</span>
-                                </div>
+                                <a href="/Keithston/">
+                                    <img src="./img/Footer/news-1.jpg" alt="Puff pastry bliss.">
+                                    <div>
+                                        <time datetime="14.06.2024">June 14, 2024</time>
+                                        <span>Puff pastry bliss.</span>
+                                    </div>
+                                </a>
                             </li>
                             <li class="footer-main__right-item">
-                                <img src="./img/Footer/news-2.jpg" alt="Puff pastry bliss.">
-                                <div>
-                                    <time datetime="14.06.2024">June 14, 2024</time>
-                                    <span>Puff pastry bliss.</span>
-                                </div>
+                                <a href="/Keithston/">
+                                    <img src="./img/Footer/news-2.jpg" alt="Puff pastry bliss.">
+                                    <div>
+                                        <time datetime="14.06.2024">June 14, 2024</time>
+                                        <span>Puff pastry bliss.</span>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -317,5 +330,52 @@
             </div>
         </div>
     </footer>
+
+    <div class="info-modal modal">
+        <div class="modal__box">
+            <button class="info-modal__cross modal__cross">
+                <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
+            </button>
+            <div class="info-modal__content modal__content">
+                <img class="info-modal__img" src="./img/Top/1.png" alt="Whole Grain Bread">
+                <h2 class="info-modal__title modal__title">Whole Grain Bread</h2>
+                <p class="info-modal__descr modal__descr">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+                </p>
+                <div class="info-modal__wrapper">
+                    <span class="info-modal__price">$40</span>
+                    <button class="info-modal__cart-btn modal__btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discount-modal modal">
+        <div class="modal__box">
+            <button class="discount-modal__cross modal__cross">
+                <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
+            </button>
+            <div class="discount-modal__content modal__content">
+                <h2 class="discount-modal__title modal__title">20% Off Your First Order</h2>
+                <p class="discount-modal__descr modal__descr">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+                </p>
+                <a class="discount-modal__shop-btn modal__btn" href="#top">Shop</a>
+            </div>
+        </div>
+    </div>
+    <div class="about-modal modal">
+        <div class="modal__box">
+            <button class="about-modal__cross modal__cross">
+                <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
+            </button>
+            <div class="about-modal__content modal__content">
+                <h2 class="modal__title">About Us</h2>
+                <p class="modal__descr">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.
+                </p>
+                <a class="about-modal__shop-btn modal__btn" href="#top">Shop</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
