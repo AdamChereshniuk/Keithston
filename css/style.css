@@ -123,6 +123,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8px 30px 40px;
+    border-radius: 8px;
 }
 
 .top__item-img {
