@@ -64,6 +64,25 @@ discountModal.classList.add("none");
 discountBtn.addEventListener("click", () => discountModal.classList.remove("none"));
 [discountModalShopBtn, discountModalCross].forEach(btn => btn.addEventListener("click", () => discountModal.classList.add("none")));
 
+// Explore Tabs
+const exploreTabs = document.querySelectorAll(".explore__tab");
+const exploreItemImgs = document.querySelectorAll(".explore__item-img");
+let currentActiveTabIndex = 0;
+
+exploreTabs[currentActiveTabIndex].classList.add("active");
+
+exploreTabs.forEach((tab, tabIndex) => {
+    tab.addEventListener("click", () => {
+        exploreTabs[currentActiveTabIndex].classList.remove("active");
+        exploreTabs[tabIndex].classList.add("active");
+        currentActiveTabIndex = tabIndex;
+
+        exploreItemImgs.forEach((img, imgIndex) => {
+            img.setAttribute("src", `./img/Explore/${tab.innerHTML}/${imgIndex + 1}.jpg`);
+        });
+    });
+});
+
 // About Modal
 const aboutBtn = document.querySelector(".about__btn");
 const aboutModal = document.querySelector(".about-modal");
